@@ -5,6 +5,16 @@ const ExperienceCard = ({ role, company, duration, description, type, link }) =>
     const [isOpen, setIsOpen] = useState(false);
     const isFrontend = type === 'frontend';
 
+    const descriptionContent = Array.isArray(description) ? (
+        <ul className="space-y-2 list-none">
+            {description.map((item, index) => (
+                <li key={index}>{item}</li>
+            ))}
+        </ul>
+    ) : (
+        <div className="whitespace-pre-line">{description}</div>
+    );
+
     return (
         <div className="bg-white rounded-xl shadow-sm border border-brand-100 overflow-hidden hover:shadow-lg transition-all duration-300 group">
             <div
@@ -62,7 +72,7 @@ const ExperienceCard = ({ role, company, duration, description, type, link }) =>
                 >
                     <div className="overflow-hidden">
                         <div className="px-6 pb-6 pt-2 text-gray-600 leading-relaxed border-t border-gray-50 mx-6 mt-2">
-                            {description}
+                            {descriptionContent}
                         </div>
                     </div>
                 </div>
@@ -71,7 +81,7 @@ const ExperienceCard = ({ role, company, duration, description, type, link }) =>
             {/* Always Visible Description for Frontend */}
             {isFrontend && (
                 <div className="px-6 pb-6 pt-2 text-gray-600 leading-relaxed border-t border-gray-50 mx-6 mt-2">
-                    {description}
+                    {descriptionContent}
                 </div>
             )}
         </div>

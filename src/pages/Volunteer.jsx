@@ -1,4 +1,5 @@
 import React from 'react';
+import gdgLogo from '../assets/GDGL.jfif';
 
 const Volunteer = () => {
     return (
@@ -11,15 +12,15 @@ const Volunteer = () => {
             <div className="grid gap-6">
                 {/* Volunteer Item 1 */}
                 <div className="bg-white rounded-xl shadow-sm border border-brand-100 p-8 flex flex-col md:flex-row gap-6 hover:shadow-md transition-shadow">
-                    <div className="w-20 h-20 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 font-bold text-xl flex-shrink-0 border border-brand-200">
-                        TB
+                    <div className="w-20 h-20 rounded-full overflow-hidden border border-brand-200 flex-shrink-0">
+                        <img src={gdgLogo} alt="GDG Lagos" className="w-full h-full object-cover" />
                     </div>
                     <div>
                         <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4">
-                            <h3 className="text-xl font-bold text-gray-900">Tech Bootcamps</h3>
-                            <span className="text-sm font-mono text-brand-500 bg-brand-50 px-3 py-1 rounded-full w-fit">2023 - Present</span>
+                            <h3 className="text-xl font-bold text-gray-900">GDG Lagos</h3>
+                            <span className="text-sm font-mono text-brand-500 bg-brand-50 px-3 py-1 rounded-full w-fit">2025 - Present</span>
                         </div>
-                        <p className="font-medium text-brand-800 mb-3">Lead Mentor</p>
+                        <p className="font-medium text-brand-800 mb-3">GDG Sec ops Lagos Organizer</p>
                         <p className="text-gray-600 leading-relaxed">
                             Mentored over 50 students in full-stack web development. Conducted code reviews, hosted weekly Q&A sessions, and helped students debug complex React applications.
                         </p>

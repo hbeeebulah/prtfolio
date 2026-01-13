@@ -51,23 +51,40 @@ const Home = () => {
                             <ExperienceCard
                                 type="community"
                                 role="Community Lead"
-                                company="TechHub Global"
-                                duration="Jan 2023 - Present"
-                                description="Spearheaded community growth strategies resulting in a 200% increase in active members. Organized weekly hybrid events, managed a team of moderators, and implemented a new onboarding workflow to improve retention."
+                                company="Solana Student Africa"
+                                duration="August 2025 - January 2025"
+                                description={[
+                                    "● Spearheaded the growth of the community from scratch to 1,000+ members, fostering high engagement within the Solana blockchain ecosystem across Africa.",
+                                    "● Organized and executed educational initiatives, including workshops, hackathons, and virtual meetups to foster technical development.",
+                                    "● Managed community communications and moderation on Discord, ensuring a positive and informative environment.",
+                                    "● Collaborated with core Solana team members and external partners to secure resources and opportunities for community members.",
+                                    "● Monitored and reported on key community metrics, such as active members, event attendance, and content engagement."
+                                ]}
                             />
                             <ExperienceCard
                                 type="community"
-                                role="Social Media Manager"
-                                company="StartUp Inc"
-                                duration="Jun 2021 - Dec 2022"
-                                description="Curated high-quality content for Twitter and LinkedIn, growing the follower base from 1k to 10k in 18 months. Handled crisis communication effectively during platform downtimes and engaged with key industry influencers."
+                                role="Community Manager"
+                                company="Web3Afrika"
+                                duration="Jun 2025 - Present"
+                                description={[
+                                    "● Managed a community of 2,000+ active builders and learners in a web3 ecosystem, fostering engagement and retention.",
+                                    "● Designed and implemented a showcase program to streamline community support, enabling community members to showcase what they are building or working on.",
+                                    "● Developed a structured onboarding process, including a reintroduction phase, leading to increased member participation.",
+                                    "● Organized virtual events, workshops, and panel sessions to drive engagement and professional development."
+                                ]}
                             />
                             <ExperienceCard
                                 type="community"
-                                role="Event Coordinator"
-                                company="DevConference"
-                                duration="2020 - 2021"
-                                description="Coordinated logistics for virtual and in-person developer conferences. Managed speaker schedules, sponsor relations, and volunteer teams to ensure seamless event execution."
+                                role="Community Manager"
+                                company="Kidsthatcode NG"
+                                duration="September 2024 – Present"
+                                description={[
+                                    "● Cultivated and grew a vibrant online and offline community of students, parents, and educators passionate about coding.",
+                                    "● Organized and promoted community events [e.g., coding challenges, webinars, parent information sessions], increasing engagement and program participation.",
+                                    "● Connected members through curated introductions and personalized support, enhancing collaboration across diverse backgrounds.",
+                                    "● Developed a comprehensive onboarding program to foster a welcoming environment and guide new members, boosting retention by 30%.",
+                                    "● Analyzed community engagement metrics to refine strategies, resulting in sustained growth and satisfaction."
+                                ]}
                             />
                         </div>
                     </div>
@@ -80,28 +97,29 @@ const Home = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <ExperienceCard
                                 type="frontend"
-                                role="E-commerce Dashboard"
-                                company="Personal Project"
-                                duration="2024"
+                                role="Senior Frontend Developer (Part time)"
+                                company="Market Prime"
+                                duration="June 2024 - June 2025"
                                 link="https://github.com"
-                                description="A responsive dashboard built with React and Tailwind CSS. Features include real-time data visualization, dark mode, and user authentication using Firebase."
+                                description={[
+                                    "● Collaborate with the team to develop and maintain responsive user interfaces using React and JavaScript, improving overall website performance and user experience.",
+                                    "● Assist in optimizing the website layout and functionality, enhancing accessibility and mobile responsiveness.",
+                                    "● Participate in code reviews and implemented feedback to ensure high-quality standards in development."
+                                ]}
                             />
                             <ExperienceCard
                                 type="frontend"
-                                role="Portfolio Site"
-                                company="Client Work"
-                                duration="2023"
+                                role="Frontend Developer"
+                                company="Querus Consults"
+                                duration="April 2023 - February 2024"
                                 link="https://github.com"
-                                description="Designed and developed a minimalist portfolio for a photographer. Focused on performance optimization, achieving a 99 Lighthouse score, and implemented lazy loading for images."
+                                description={[
+                                    "● Developed and launched customized WordPress websites for clients, ensuring their business requirements were met efficiently.",
+                                    "● Integrated plugins and features to enhance website functionality and improve user interaction.",
+                                    "● Worked closely with the design team to create visually appealing and functional websites, delivering projects within tight deadlines."
+                                ]}
                             />
-                            <ExperienceCard
-                                type="frontend"
-                                role="Task Management App"
-                                company="Open Source"
-                                duration="2023"
-                                link="https://github.com"
-                                description="Contributed to a React-based task manager. Implemented drag-and-drop functionality using dnd-kit and fixed critical accessibility bugs."
-                            />
+
                         </div>
                     </div>
                 )}
