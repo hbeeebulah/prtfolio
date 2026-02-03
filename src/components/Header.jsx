@@ -62,6 +62,16 @@ const Header = () => {
                     >
                         Volunteer
                     </Link>
+                    <Link
+                        to="/contact"
+                        className={`px-5 py-2.5 rounded-lg text-sm font-bold transition-all
+               ${isActive('/contact')
+                                ? 'bg-white text-brand-600 shadow-sm ring-1 ring-black/5'
+                                : 'text-brand-400 hover:text-brand-600 hover:bg-white/50'
+                            }`}
+                    >
+                        Contact
+                    </Link>
                 </nav>
 
             </div>
